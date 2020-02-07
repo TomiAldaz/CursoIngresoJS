@@ -6,8 +6,21 @@ function mostrar()
 
 	nombre = prompt("Please enter your name", "Harry Poter"); // reotrna algo. lo voy a tener q asignar a una variable EJ(var nombre = prompt() siempre el igual )
 	console.log ( nombre ); // reotrna algo. lo voy a tener q asignar a una variable EJ(var nombre = prompt() siempre el igual )
-	console.log("Coloque su nombre aqui " + nombre    );
- 
+	console.log("Su nombre es: " + nombre    );
+ // CONCATENAR= Unir un mensaje literal con una o mas variables 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
