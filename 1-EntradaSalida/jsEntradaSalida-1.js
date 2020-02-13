@@ -15,10 +15,18 @@ function mostrar()
 	//alert(primerPreco) Si la variable no existe no podemos hacer nada
 	// F12-> Sources ->  Click en la linea de codigo donde esta la variable-> tocar "mostrar" -> F11 para pasar de codigo 
 
+	// 1ra 	git clone https://github.com/TomiAldaz/CursoIngresoJS.git
+
+	// 		git add . 
+	// 		git commit -m "Mi primer commit"
+	// 		git push
+
+	// git status despues de cada comando para saber si va todo bien 
 
 
 
 
+// guardarlo -> sublime index.html
 
 
 
