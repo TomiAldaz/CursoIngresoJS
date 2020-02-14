@@ -15,37 +15,72 @@ function CalcularPrecio ()
 	var precioBruto;
 	var precioFinal;
 	var marca;
+	var descuento
 
 	precio= 35;
 	cantidadLamparitas=document.getElementById('Cantidad').value;
 	cantidadLamparitas= parseInt(cantidadLamparitas); 
 	marca= document.getElementById('Marca').value;
 
+	precioBruto= precio * cantidadLamparitas;
+	descuento=0;
+
 	if (cantidadLamparitas==6)
-		{
-
-			precioBruto= precio * cantidadLamparitas;
-			precioFinal= precioBruto - (precioBruto*0.5);
-			
-			document.getElementById('precioDescuento').value = precioFinal;
-		 }
-
-	if (cantidadLamparitas==5) 
 	{
-		if(marca="ArgentinaLuz")
+			descuento= 50;
+	}else
+	{
+		if (cantidadLamparitas==5) 
 		{
-			precioFinal= precioBruto - (precioBruto*0.4);
-			document.getElementById('precioDescuento').value = precioFinal;
-		}
+				if (marca=="ArgentinaLuz")
+				{
+
+						descuento= 40;
+			
+				}else
+					{
+						descuento= 30;				
+					}
 
 		else
+		{
+			if(cantidadLamparitas==4)
 			{
-				precioFinal= precioBruto - (precioBruto*0.3);
-				document.getElementById('precioDescuento').value = precioFinal;
-			}
+				if (marca=="FelipeLamparas" || marca== "ArgentinaLuz") 
+				{
+						descuento= 25;
+				} else
+						{
+							descuento= 20;
+						}
+			}else
+				{
+					if (cantidadLamparitas==3)
+					{
+						if (marca=="ArgentinaLuz") 
+						{
+							descuento= 15;
+						}else
+							{
+								if (marca=="FelipeLamparas") 
+								{
+									descuento= 10;
+								}else
+								{
+									descuento=5;
+								}
+							}
+					}
+				}
+		}
 
 	}
+	}
 
+	
 
+	precioFinal= precioBruto -(precioBruto*descuento)/100;
+	document.getElementById('precioDescuento').value = precioFinal;
 
+ // esta mal borrar hasta q de bien y a partir de ahi empezar 
 }
