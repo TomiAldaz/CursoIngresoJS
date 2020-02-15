@@ -5,13 +5,13 @@ function mostrar()
 	edad= document.getElementById('edad').value;
 	edad= parseInt(edad);
 	
-	if(edad<17)
+	if(edad>17)
 	{
 		alert("Usted es mayor");
 	}
 	else
 	{
-		if(edad>12)
+		if(edad<13)
 		{
 			alert("Usted es menor");
 		}
