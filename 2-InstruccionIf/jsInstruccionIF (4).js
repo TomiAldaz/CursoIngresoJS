@@ -1,10 +1,10 @@
 function mostrar()
 {
-	var edad;
+	/*var edad;
 	//tomo la edad  
 	edad= document.getElementById('edad').value;
 	edad= parseInt(edad);
-	/*if (edad > 12 ) 
+	if (edad > 12 ) 
 	{
 		// mayores a 12
 		if (edad<18) 
@@ -12,14 +12,22 @@ function mostrar()
 
 			alert("Usted es adolescente");
 		}
-*/
+
 	if (edad>12 && edad<18) 
 	{
 
 		alert("Usted es adolescente");
 	}
+*/
 
+	var edad;
+	edad=document.getElementById('edad').value;
+	edad=parseInt(edad);
 
+	if (edad>12 && edad<16) 
+	{
+		alert("Usted es adolescente");
+	}
 
 	
 
