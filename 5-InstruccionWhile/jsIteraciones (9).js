@@ -14,11 +14,20 @@ function mostrar()
 		numeroIngresado= prompt("Ingrese su(s) numero(s) por favor.");
 		numeroIngresado= parseInt(numeroIngresado);
 
-		if (numeroIngresado ) 
+		while(isNaN(numeroIngresado))
 		{
-
+			numeroIngresado= prompt("Ingrese su(s) numeros(s) por favor.");
+			numeroIngresado= parseInt(numeroIngresado);
 		}
 
+		if(numeroIngresado>1)
+		{
+			numeroMaximo= numeroIngresado;
+			numeroMinimo=numeroIngresado;
+		}else
+		{	if(nu)
+
+		}
 
 
 
