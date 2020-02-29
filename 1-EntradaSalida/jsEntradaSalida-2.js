@@ -55,14 +55,14 @@ el promedio de cantidad de días por reserva*/
 
 
 		nombre=prompt("Ingrese su nombre ");
-		while(!IsNaN(nombre))
+		while(!isNaN(nombre))
 		{
 			nombre=prompt("Ingrese su nombre ");
 		}
 
 		cantidadPersonas=prompt("Ingrese la cantidad de personas");
 		cantidadPersonas=parseInt(cantidadPersonas);
-		while(IsNaN(cantidadPersonas)|| cantidadPersonas<1)
+		while(isNaN(cantidadPersonas)|| cantidadPersonas<1)
 		{
 			cantidadPersonas=prompt("Ingrese la cantidad de personas");
 		cantidadPersonas=parseInt(cantidadPersonas);
@@ -70,14 +70,14 @@ el promedio de cantidad de días por reserva*/
 
 		cantidadDias=prompt("Ingrese la cantidad de dias");
 		cantidadDias=parseInt(cantidadDias);
-		while(IsNaN(cantidadDias)|| cantidadDias<1)
+		while(isNaN(cantidadDias)|| cantidadDias<1)
 		{
 			cantidadDias=prompt("Ingrese la cantidad de dias");
 		cantidadDias=parseInt(cantidadDias);
 		}
 
 		formaDePago=prompt("Ingrese su forma de pago");
-		while(!IsNaN(formaDePago)|| formaDePago!= "Efectivo"&& formaDePago!="Tarjeta"&&formaDePago!= "QR")
+		while(!isNaN(formaDePago)|| formaDePago!= "Efectivo"&& formaDePago!="Tarjeta"&&formaDePago!= "QR")
 		{
 			formaDePago=prompt("Ingrese su forma de pago");
 		}
@@ -104,13 +104,14 @@ el promedio de cantidad de días por reserva*/
 			case "Tarjeta":
 			contadorTarjeta++;
 				break;
-			default
+			default:
 			contadorQR++;
 				break;
 
 		}
 
 		acumuladorDeDias=acumuladorDeDias+cantidadDias;
+		respuesta=prompt("Ingrese Si para continuar");
 
 	}
 
